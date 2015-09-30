@@ -3,6 +3,7 @@
 -- | Main entry point to the application.
 module Main where
 
+import Lib
 import System.Environment
 import Control.Applicative
 import qualified Data.ByteString.Lazy as BL
