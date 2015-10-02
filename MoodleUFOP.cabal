@@ -1,5 +1,5 @@
 name:                MoodleUFOP
-version:             0.1.0.0
+version:             0.1.0.1
 synopsis:            Transforma arquivos CSV do MinhaUFOP para carga no Moodle.
 description:         Leia o README.md.
 homepage:            http://github.com/glauberMonitoriaDECSI/MoodleUFOP#readme
