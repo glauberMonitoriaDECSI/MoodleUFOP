@@ -15,12 +15,13 @@ opções = Opções
          ( short 'd'
         <> metavar "DISCIPLINA.csv"
         <> help "Arquivo CSV de Disciplinas de Departamento." ))
-     <*> some (strOption
+     <*> many (strOption
          ( short 'a'
         <> metavar "ALUNO.csv"
         <> help "Arquivo CSV de Alunos (diário de classe)." ))
 
 transformar :: Opções -> IO ()
+transformar (Opções [] []) = error "Utilize -h para informações."
 transformar (Opções d a) = do
     mapM_ transformaDisciplinas d
     mapM_ transformaAlunos a
