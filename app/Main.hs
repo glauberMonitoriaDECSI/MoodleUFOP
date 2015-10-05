@@ -3,7 +3,8 @@ module Main where
 
 import System.Environment
 import Options.Applicative
-import Transformações
+import Disciplinas
+import Alunos
 
 data Opções = Opções
   { disciplinas :: [String]
